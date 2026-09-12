@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release Note Incident | Product Marketing</title>
+  <meta name="description" content="A product marketing incident-response case study for a release note sent before a feature was fully live.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="dot"></span> PRODUCT MARKETING / INCIDENT REVIEW</div>
+    <span class="status">LIVE CAMPAIGN REVIEW</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">CASE 01 · RELEASE COMMUNICATION</div>
+      <h1>A release note went out before the feature was live for everyone.</h1>
+      <p class="hero-copy">5,150 customers received the product update. The job now is to contain the error, establish the real product state, correct the message, and prevent the same failure next month.</p>
+      <div class="hero-meta">
+        <div><strong>5,150</strong><span>recipients</span></div>
+        <div><strong>1</strong><span>factual error</span></div>
+        <div><strong>HubSpot</strong><span>assumed ESP</span></div>
+        <div><strong>Now</strong><span>incident response</span></div>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="card alert-card">
+        <div class="card-label">THE INCIDENT</div>
+        <h2>The release note said “available now.”</h2>
+        <p>The feature is actually in a staged rollout and is not yet available to the entire customer base.</p>
+        <div class="quote">“Available now for all customers.”</div>
+        <div class="replacement">Correct state → <strong>“Rolling out gradually and becoming available to customers over the coming days.”</strong></div>
+      </article>
+
+      <article class="card">
+        <div class="card-label">WHAT MATTERS</div>
+        <h2>Don't start with the email.</h2>
+        <p>The first question is not “Should we send a correction?” It is “What is the exact product state right now?”</p>
+        <ol class="steps">
+          <li><span>01</span>Confirm rollout status with Product / Engineering.</li>
+          <li><span>02</span>Identify who actually received the incorrect claim.</li>
+          <li><span>03</span>Decide whether the error creates customer action or confusion.</li>
+          <li><span>04</span>Correct the message with the smallest necessary intervention.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="card-label">CAMPAIGN SNAPSHOT</div>
+          <h2>HubSpot email status</h2>
+        </div>
+        <span class="pill">FEATURE UPDATE · SEPTEMBER</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><span>Sent</span><strong>5,150</strong></div>
+        <div class="metric"><span>Delivered</span><strong>5,094</strong><small>99% estimated</small></div>
+        <div class="metric"><span>Opened</span><strong>2,241</strong><small>44% estimated</small></div>
+        <div class="metric"><span>Clicked</span><strong>421</strong><small>8.3% estimated</small></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Audience</th><th>Product state</th><th>Risk</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Customers with feature enabled</td><td><span class="badge green">LIVE</span></td><td>Low</td><td>No correction needed</td></tr>
+            <tr><td>Customers in staged rollout</td><td><span class="badge amber">ROLLING OUT</span></td><td>Medium</td><td>Clarify availability</td></tr>
+            <tr><td>Customers not yet eligible</td><td><span class="badge red">NOT LIVE</span></td><td>High</td><td>Correct communication</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="section-head">
+        <div>
+          <div class="card-label">DECISION TREE</div>
+          <h2>What should PMM do next?</h2>
+        </div>
+      </div>
+      <div class="decision-grid">
+        <div class="decision">
+          <span class="number">A</span>
+          <h3>Is the feature already usable by the recipient?</h3>
+          <p>If yes, the risk is mainly wording. If no, the customer may reasonably try to use something they cannot access.</p>
+        </div>
+        <div class="decision">
+          <span class="number">B</span>
+          <h3>Has the email created a broken expectation?</h3>
+          <p>If customers are likely to look for the feature immediately, send a correction rather than silently waiting.</p>
+        </div>
+        <div class="decision">
+          <span class="number">C</span>
+          <h3>Can the audience be segmented?</h3>
+          <p>Do not send the same correction to everyone if product state can be mapped to customer cohorts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid two section">
+      <article class="card">
+        <div class="card-label">RECOMMENDED RESPONSE</div>
+        <h2>Own the correction. Keep it narrow.</h2>
+        <div class="timeline">
+          <div><span>0–30 min</span><p>Freeze further sends. Confirm rollout state and affected cohorts with Product.</p></div>
+          <div><span>30–60 min</span><p>Assess opens/clicks and whether customers have been directed to an unavailable experience.</p></div>
+          <div><span>1–2 hrs</span><p>Draft a correction that states what was wrong, what is true, and when customers should expect access.</p></div>
+          <div><span>2+ hrs</span><p>Send to the affected audience. Route replies to Support and document the root cause.</p></div>
+        </div>
+      </article>
+
+      <article class="card correction">
+        <div class="card-label">CORRECTION EMAIL</div>
+        <div class="email-preview">
+          <div class="email-top"><span>Subject</span><strong>A quick correction to our product update</strong></div>
+          <p>We need to correct one detail from our product update sent earlier today.</p>
+          <p>The feature mentioned in that email is currently rolling out gradually and is <strong>not yet available to every customer</strong>.</p>
+          <p>If you don't see it in your account yet, no action is needed. We'll make it available to you as the rollout progresses.</p>
+          <p>We apologize for the confusion.</p>
+          <div class="email-footer">PRODUCT MARKETING · CUSTOMER COMMUNICATION</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="card-label">ROOT CAUSE</div>
+          <h2>Fix the release-note system, not just the email.</h2>
+        </div>
+      </div>
+      <div class="controls">
+        <div><strong>01</strong><h3>Release readiness gate</h3><p>Every “available now” claim needs an explicit product owner sign-off.</p></div>
+        <div><strong>02</strong><h3>Audience eligibility</h3><p>Separate global availability from phased rollout and beta access.</p></div>
+        <div><strong>03</strong><h3>Single source of truth</h3><p>Maintain a release-status field that PMM can verify before publishing.</p></div>
+        <div><strong>04</strong><h3>Pre-send QA</h3><p>Check feature state, audience, CTA, links, dates, and screenshots before scheduling.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>PRODUCT MARKETING CASE STUDY</span>
+    <span>Built as a static GitHub Pages site</span>
+  </footer>
+</body>
+</html>
